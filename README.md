@@ -22,9 +22,5 @@ git checkout -t origin/ssam
 ## 리모트에서 특정 브랜치의 업데이트 된 내용을 로컬로 가져오기
 
 ```sh
-<<<<<<< HEAD
-git pull --set-upstream origin bambi
-=======
 git pull --set-upstream origin ssam
->>>>>>> ssam
 ```
