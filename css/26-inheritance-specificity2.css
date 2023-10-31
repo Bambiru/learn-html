@@ -1,0 +1,32 @@
+body {
+  font-family: 'SUIT';
+  font-weight: 300;
+}
+
+p {
+  color: red;
+}
+
+a {
+  color: inherit;
+}
+
+.note {
+  color: blue;
+}
+
+.note.text3 {
+  color: purple;
+}
+
+div.note {
+  color: green;
+}
+
+#lion {
+  color: green;
+}
+
+.a.b.c.d.e.f.g.h.i.j.k {
+  color: blue;
+}
