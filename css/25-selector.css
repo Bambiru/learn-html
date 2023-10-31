@@ -1,1 +1,134 @@
 /* CSS 선택자(Selector) */
+:root {
+  --primary-color: #373e6a;
+  --secondary-color: #ccc;
+  --base-color: #fff;
+}
+
+* {
+  color: darkblue;
+}
+
+body {
+  margin: 50px;
+  background: var(--secondary-color);
+}
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+ul.menu {
+  margin: 0;
+  padding-left: 0;
+  background: yellow;
+}
+
+#demo {
+  border: red 2px solid;
+}
+
+[lang='en'] {
+  font-family: Helvetica;
+  color: purple;
+}
+
+a[href^="https://"]
+{
+  background: url('../images/external-link.png') no-repeat 100% 0;
+  padding-right: 30px;
+}
+
+a[href$='.pdf'] {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+ul > a {
+  text-decoration: none;
+  color: green;
+}
+
+.lorem::first-letter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f00;
+}
+
+.lorem::first-line {
+  background: #000;
+  color: #fff;
+}
+
+.lorem::before {
+  content: '첫 번째 자식 가상 요소';
+}
+
+.lorem::after {
+  content: '마지막 자식 가상 요소';
+}
+
+::selection {
+  background: #373e6a;
+  color: #fff;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  color: #f00;
+}
+
+/* 확인 필요 */
+/* summary::marker {
+  display: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+} */
+
+summary:after {
+  background: #da291c;
+  border-color: #da291c;
+  border-radius: 15px;
+  content: '+';
+  color: #fff;
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  margin: -2px 10px 0 0;
+  padding: 1px 0 3px 0;
+  text-align: center;
+  width: 30px;
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: var(--base-color);
+}
+
+input:focus {
+  color: #00f;
+}
+
+.wrapper {
+  border: 1px solid green;
+  padding: 20px;
+}
+
+.wrapper:focus-within {
+  background: pink;
+}
+
+input:invalid {
+  background: salmon;
+}
+
+.list li:nth-child(n + 4) {
+  background: aqua;
+}
