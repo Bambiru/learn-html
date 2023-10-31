@@ -2,3 +2,35 @@ body {
   font-family: "SUIT";
   font-weight: 300;
 }
+
+/* agent의 스타일이 우선순위가 더 높다. */
+/* 명시도1점 */
+p {
+  color: red;
+}
+
+a {
+  /* 상속받겠다는 의미이다. */
+  color: inherit;
+}
+
+/* 명시도 10점 */
+.note {
+  color: blue;
+}
+/* 명시도 20점 */
+.note.text3 {
+  color: purple;
+}
+/* 명시도 11점 */
+div.note {
+  color: green;
+}
+
+/* 둘의 가중치가 다르기 때문에 클래스가 아이디를 이길 순 없다. */
+#lion {
+  color: green;
+}
+.a.b.c.d.e.f.g.h.i.j.k {
+  color: blue;
+}
