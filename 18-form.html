@@ -1,1 +1,31 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 관련 요소</title>
+  </head>
+  <body>
+    <!-- action : 서버의 url이 들어올 공간
+         method : get, post 방식이 있다.
+            - get
+            - post
+     -->
+    <form action="서버URL" method="get">
+      <fieldset>
+        <legend>검색</legend>
+        <!-- input의 type에 따라 서식이 달라진다. id를 반드시 줘야 한다.
+          input 서식은 반드시 1:1로 대응되는 label을 갖고있어야 한다.
+        -->
+        <div>
+          <label for="search">검색어 입력</label>
+          <input type="text" id="search" />
+        </div>
+        <!-- 명확하게 type을적어주자. 기본값은 submit이다. -->
+        <button type="submit">검색</button>
+        <!-- 기능상의 차이점은 없다. -->
+        <input type="submit" value="검색" />
+      </fieldset>
+    </form>
+  </body>
+</html>
