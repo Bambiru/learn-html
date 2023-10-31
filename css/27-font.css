@@ -12,3 +12,8 @@ ul {
   background-size: 100px 100px, 450px 150px, 350px 600px;
   background-position: 250px 0, 200px 0, 0 0;
 }
+
+p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
